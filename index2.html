@@ -6,27 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rapid Hair By JOICO</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="jquery.fadethis.js"></script>
+  
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+   
+   
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="st%C3%ADlus2.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abel|Oswald:200|Tangerine|Yanone+Kaffeesatz:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:500" rel="stylesheet">
     
-
-    <script src="jquery-3.3.1.js"></script>
-        
-    
-    
-    
-    
-
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+   
 </head>
 
 <body>
-   
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+
     <header>
      <nav class="navbar navbar-expand-lg fixed-top bg-dark ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +106,7 @@
     <div class="container-fluid ">
     <div class="row">
     <div class="col-xl-4 col-sm-6 order-sm-2 order-xl-3"><img src="images/salonimg4.jpg" alt="szalon" class="img-fluid rounded"></div>
-    <div class="col-xl-4 col-sm-12 order-sm-3 order-xl-2"><h2 class="text-center">A szalon</h2>
+    <div class="slide-bottom col-xl-4 col-sm-12 order-sm-3 order-xl-2"><h2 class="text-center">A szalon</h2>
     <p class="text-center">A Rapid Hair By JOICO egy fiatalos és családias légkörű divatszalon, mely 2014. szeptember 19-én nyitott. Szolgáltatásaink között megtalálhatóak a legújabb trendnek megfelelő frizurák, valamint különböző hajszerkezet újraépítő szolgáltatások is. Egy szalon, ahol az egészséges, természetes és divatos haj van a középpontban. JOICO termékcsaláddal dolgozunk, amivel mindez elérhetővé válik!</p></div>
     <div class="col-xl-4 col-sm-6 order-sm-1"><img src="images/salonimg5.jpg" alt="szalon" class="img-fluid rounded"></div>
     </div>
@@ -104,19 +127,19 @@
     <p class="text-center">Hajad a stílusod!
     Frizurakészítés akár azonnal, bejelentkezés nélkül, vagy bejelentkezéssel is! Katt a képre a nagyításhoz!</p>
     <div class="container mt-4">
-    <div class="row no-gutters justify-content-center">
+    <div  class="slide-bottom row no-gutters justify-content-center">
         <div class="col-11 col-md-4 "><a href="images/price1.jpg"><img src="images/price1.jpg" alt="..." class="img-thumbnail"></a></div>
         <div class="col-11 col-md-8 align-self-center"><img src="images/szolg1.jpg" alt="..." class="rounded img-fluid"></div>
      
      </div><br>
-     <div class="row  no-gutters justify-content-center">
+     <div class="slide-left row  no-gutters justify-content-center">
      <div class="col-md-4 order-md-2"><a href="images/price2.jpg"><img src="images/price2.jpg" alt="..." class="img-thumbnail"></a></div>
      <div class="col-md-8 align-self-center order-md-1"><img src="images/szolg2.jpg" alt="..." class="rounded img-fluid"></div>
      
      
      </div><br>
      
-     <div class="row no-gutters justify-content-center">
+     <div class="slide-bottom row no-gutters justify-content-center">
      <div class="col-md-4"><a href="images/price7.jpg"><img src="images/price7.jpg" alt="..." class="img-thumbnail"></a></div>
      <div class="col-md-8 align-self-center"><img src="images/szolg3.jpg" alt="..." class="rounded img-fluid"></div>
      
@@ -215,21 +238,21 @@
     <h2 class="text-center">Kollégák</h2>
     
     <div class="card-deck">
-  <div class="card">
+  <div class="slide-top card">
     <img class="card-img-top" src="images/koll%C3%A9g%C3%A1k1.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title text-center">Andrea</h5>
       <p class="card-text text-center">"Nullam vehicula risus ac mauris pulvinar fermentum. Proin quis leo egestas, euismod sem vel, tempor ipsum. Cras sit amet libero tempus, lacinia est vitae, commodo erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam placerat at nisl at euismod. Quisque ac aliquam neque."</p>
     </div>
   </div>
-  <div class="card">
+  <div class="slide-top card">
     <img class="card-img-top" src="images/koll%C3%A9g%C3%A1k2.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title text-center">Szilvi</h5>
       <p class="card-text text-center">"Nullam vehicula risus ac mauris pulvinar fermentum. Proin quis leo egestas, euismod sem vel, tempor ipsum. Cras sit amet libero tempus, lacinia est vitae, commodo erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam placerat at nisl at euismod."</p>
     </div>
   </div>
-  <div class="card">
+  <div class="slide-top card">
     <img class="card-img-top" src="images/koll%C3%A9g%C3%A1k3.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title text-center">Niki</h5>
@@ -247,19 +270,19 @@
   <div class="card-header"><div style="height: 7vh"></div><h2 class="text-center">Vélemények</h2>
   </div>
   <div class="card-body">
-    <blockquote class="blockquote mb-0 text-center">
+    <blockquote class="slide-right blockquote mb-0 text-center">
       <p>"Nem terveztem nagyobb vágást, de az ő "szőkítési" eljárásuknak hála a hajam saját maga szabadult meg kb 10 cm NARANCSSÁRGA résztől. Ja igen, mindezt a szuper kíméletes szőkítési eljárással és a rám tukmált szintén szuperjó termékekkel. Mindenki figyeljen oda, az ár nem egyenlő a minőséggel!"</p>
       <footer class="blockquote-footer">Kármán Viktória</footer>
     </blockquote>
-    <blockquote class="blockquote mb-0 text-center">
+    <blockquote class="slide-right blockquote mb-0 text-center">
       <p>"Hosszu Ildi valtoztatta at a szinte derekig ero hajamat epp, hogy vallig erove. Mindig feltem a drasztikus valtozasoktol de amikor elmondtam az elkepzelesemet es megmutattam a kepet, hogy mit szeretnek, Ildi azt mondta, hogy szuper lesz, megigeri. Ugy is lett! Mindemellett pedig egy 5 honapos ISZSZ babat kellett 2x is megetetnem es ebben is nagyon megertoek es segitokeszek voltak a szalonban. Meg egyszer koszi Ildi!"</p>
       <footer class="blockquote-footer">Herner Gabriella</footer>
     </blockquote>
-    <blockquote class="blockquote mb-0 text-center">
+    <blockquote class="slide-right blockquote mb-0 text-center">
       <p>"Anikó és Laci elmondhatatlanul ügyesek, profik és valóban törődnek a vendegekkel! Professzionális a szalon, összehangolt jó csapat. Sötét hajam ellenére ez az egyetlen olyan szalon ahonnan mindig mosolyogva jöttem ki, mert akar ombre akar balayage-t kertem, vagy képet mutattam, már elsőre azt az arnyalatot, színt kaptam amire vágytam! Ha valóban tökéletes fodrászatra vágysz ahol azt kapod amit szeretnel akkor megtaláltad a tökéletes helyet! :)"</p>
       <footer class="blockquote-footer">Szalánczi Beáta</footer>
     </blockquote>
-    <blockquote class="blockquote mb-0 text-center">
+    <blockquote class="slide-right blockquote mb-0 text-center">
       <p>"Mindig találnak nekem időpontot, még Tamáshoz is; és a kedves mosoly, az udvarias kiszolgálás itt mindenki védjegye. 
 Gratulálok Ivett a csapatodhoz! A hasonlókat magad köré vonzottad! "</p>
       <footer class="blockquote-footer">Nagy Andrea</footer>
@@ -359,7 +382,15 @@ Gratulálok Ivett a csapatodhoz! A hasonlókat magad köré vonzottad! "</p>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        
+$(document).ready(function() {
+$(window).fadeThis({speed: 1000});
+});
+</script>
+    
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
