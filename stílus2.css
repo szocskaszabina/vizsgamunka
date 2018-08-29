@@ -172,7 +172,7 @@ label, .gomb, td, th, form div button {font-family: 'Yanone Kaffeesatz', sans-se
     form div {width: 80%; padding: 0}
     table.darkTable {margin: 0; width: 100%}
     #velemeny .container-fluid {width: 100%;}
-    .háttér {background-image: url(images/bg5.jpg);background-attachment: fixed; background-size: cover}
+    .háttér {background-image: url(images/bg5.jpg);background-attachment: fixed; background-size: cover; background-position: center}
     form div {background-color: transparent; width: 95%}
     #munkak {min-height: auto}
         }
