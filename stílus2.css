@@ -1,192 +1,394 @@
-html, body {
-    width: 100%; margin: 0; padding: 0; background-color: #000000; color: white
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white
 }
 
-* {box-sizing: border-box}
-section {width: 80%; margin: 0 auto; min-height: ; margin-top:7vh }
-h2, h3 {font-family: 'Rajdhani', sans-serif;}
-h2 {text-transform: uppercase}
-p {font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 400; font-size: 18px}
-label, .gomb, td, th, form div button {font-family: 'Yanone Kaffeesatz', sans-serif;font-weight: 400; font-size: 18px}
+* {
+    box-sizing: border-box
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    min-height: ;
+    margin-top: 7vh
+}
+
+h2,
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    font-size: 18px
+}
+
+label,
+.gomb,
+td,
+th,
+form div button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    font-size: 18px
+}
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 10px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: transparent;/* Set a background color */
-    color: #FFD700; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 25px; /* Increase font size */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFD700;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555;
 }
 
 /*menüsor*/
-.nav-link {color: white; text-transform: uppercase; font-family: 'Oswald', sans-serif;}  
-.nav-link:hover {color: #FFD700}
-.nav-item:hover {background-color: white}
-.icon-bar {color:white}
+
+.nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-link:hover {
+    color: #FFD700
+}
+
+.nav-item:hover {
+    background-color: white
+}
+
+.icon-bar {
+    color: white
+}
 
 /*kezdőképernyő*/
-        #carouselExampleSlidesOnly div div .slide { color: #FFD700; background-image: url(images/slide1.jpg); width: 100%; height: 93vh; margin-top: 7vh; background-size: cover;background-attachment: fixed}
-        #carouselExampleSlidesOnly div div .slide{background-image: url(images/slide1.jpg); height: 95vh; background-size: cover;background-attachment: fixed}
-        #carouselExampleSlidesOnly div div .slide2 {background-image: url(images/slide2.jpg)}
-        #carouselExampleSlidesOnly div div .slide3 {background-image: url(images/slide3.jpg)}
-        #carouselExampleSlidesOnly div div .slide4 {background-image: url(images/slide4.jpg)}
-        #carouselExampleSlidesOnly div div .slide > button {position: relative; top:; font-family: 'Parisienne', cursive; font-size: 50px; font-weight: 100; width:100%; background-color: rgb(255, 255, 255, 0.2); filter: alpha(opacity=20); border: none;border-radius: 3px;padding: 6px;color:#FFD700;animation-name: fade;
-        animation-duration: 7s;}
-        #carouselExampleSlidesOnly div div .slide > button span{position: relative; animation-name: position2; animation-duration: 3s}
 
-@keyframes fade {
+#carouselExampleSlidesOnly div div .slide {
+    color: #FFD700;
+    background-image: url(images/slide1.jpg);
+    width: 100%;
+    height: 93vh;
+    margin-top: 7vh;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#carouselExampleSlidesOnly div div .slide {
+    background-image: url(images/slide1.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#carouselExampleSlidesOnly div div .slide2 {
+    background-image: url(images/slide2.jpg)
+}
+
+#carouselExampleSlidesOnly div div .slide3 {
+    background-image: url(images/slide3.jpg)
+}
+
+#carouselExampleSlidesOnly div div .slide4 {
+    background-image: url(images/slide4.jpg)
+}
+
+#carouselExampleSlidesOnly div div .slide > button {
+    position: relative;
+    top: ;
+    font-family: 'Parisienne', cursive;
+    font-size: 50px;
+    font-weight: 100;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.2);
+    filter: alpha(opacity=20);
+    border: none;
+    border-radius: 3px;
+    padding: 6px;
+    color: #FFD700;
+    animation-name: fade;
+    animation-duration: 7s;
+}
+
+#carouselExampleSlidesOnly div div .slide > button span {
+    position: relative;
+    animation-name: position2;
+    animation-duration: 3s
+}
+
+
+@keyframes position2 {
     0% {
-      opacity: 0;
-        
+        left: 100%;
+    }
+    100% {
+        left: 0;
     }
 }
-@keyframes position2 {
-  0% {
-    left: 100%;
-  } 
-  100% {
-    left: 0;
-  }
-} 
 
 /*első section "A szalon"*/
-#szalon div div div img {width:100%}
 
-@keyframes position {
-  0% {
-    right: 100%;
-  } 
-  100% {
-    right: 0;
-  }
-} 
+#szalon div div div img {
+    width: 100%
+}
+
+
 
 /*második section "Árak*/
-#szolgaltatas {width: 100%}
+
+#szolgaltatas {
+    width: 100%
+}
+
 /*harmadik section "Időpont*/
-        #foglalas {width: 100%;}
-        form {width: 100%; background-color: rgba(0,0,0,0,); color:white;background-attachment: fixed; background-image: url(images/foglal%C3%A1sbg2.jpg);background-repeat: no-repeat; background-size: cover;background-position: center}
-        form div {width: 40%; margin: 0 auto; padding: 10px; line-height: 30px; background-color: black; padding: 25px}
-        input,textarea {width:100%; background-color: transparent; border: 1px solid white; border-radius: 5px; color: white;}
-        input {height: 30px}
-        form div > button {background-color: transparent; border: 1px solid white; border-radius: 3px; color: white; height: 30px}
+
+#foglalas {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0, );
+    color: white;
+    background-attachment: fixed;
+    background-image: url(images/foglal%C3%A1sbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+form div {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 30px;
+    background-color: black;
+    padding: 25px
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+input {
+    height: 30px
+}
+
+form div > button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    height: 30px
+}
 
 
 /*negyedik section "Galéria*/
-       
-  #carouselExampleFade .carousel-inner  {
-      width: 70%;
-      margin: auto;
-  }
+
+#carouselExampleFade .carousel-inner {
+    width: 70%;
+    margin: auto;
+}
 
 /*ötödik section "Kollégák*/
-#kollegak div div .card-body {background-color: black}
+
+#kollegak div div .card-body {
+    background-color: black
+}
 
 /*hatodik section "Vélemények*/
-#velemeny {min-height: 95vh;width:100%;background-image: url(images/bg2.jpg); background-attachment: fixed; background-position: center; background-size: cover}
-.blockquote {font-size: 15px;}
-#velemeny .container-fluid {width: 80%;}
-.card {background-color: black;}
+
+#velemeny {
+    min-height: 95vh;
+    width: 100%;
+    background-image: url(images/bg2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover
+}
+
+.blockquote {
+    font-size: 15px;
+}
+
+#velemeny .container-fluid {
+    width: 80%;
+}
+
+.card {
+    background-color: black;
+}
 
 
 /*hetedik section "Videók*/
-#videók {width: 100%; min-height: 60vh}
+
+#videók {
+    width: 100%;
+    min-height: 60vh
+}
 
 /*nyolcadik section "Kapcsolat*/
+
 #kapcsolat {
-    width: 100%; min-height: 65vh; background-image: url(images/bg3.jpg);background-attachment: fixed;
-    background-size: cover; background-position: top;
-    
+    width: 100%;
+    min-height: 65vh;
+    background-image: url(images/bg3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+
 }
 
-        table.darkTable {
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      border: 2px solid #000000;
-      background-color: #4A4A4A;
-      width: 50%;
-      height: 200px;
-      text-align: center;
-      border-collapse: collapse;
-            margin: 0 auto;
-      margin-bottom: 15px;
-    
-}
-      table.darkTable td, table.darkTable th {
-      border: 1px solid #4A4A4A;
-}
-      table.darkTable tbody td {
-      font-size: 13px;
-      color: #E6E6E6;
-}
-      table.darkTable tr:nth-child(even) {
-      background: #888888;
-}
-      table.darkTable thead {
-      background: #000000;
-      border-bottom: 3px solid #000000;
-}
-      table.darkTable thead th {
-      font-size: 15px;
-      font-weight: bold;
-      color: #E6E6E6;
-      text-align: center;
-      border-left: 2px solid #4A4A4A;
-}
-      table.darkTable thead th:first-child {
-      border-left: none;
+table.darkTable {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border: 2px solid #000000;
+    background-color: #4A4A4A;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
 }
 
-      table.darkTable tfoot td {
-      font-size: 12px;
+table.darkTable td,
+table.darkTable th {
+    border: 1px solid #4A4A4A;
+}
+
+table.darkTable tbody td {
+    font-size: 13px;
+    color: #E6E6E6;
+}
+
+table.darkTable tr:nth-child(even) {
+    background: #888888;
+}
+
+table.darkTable thead {
+    background: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+table.darkTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #E6E6E6;
+    text-align: center;
+    border-left: 2px solid #4A4A4A;
+}
+
+table.darkTable thead th:first-child {
+    border-left: none;
+}
+
+table.darkTable tfoot td {
+    font-size: 12px;
 }
 
 
-#kapcsolat .gomb {background-color: rgb(255, 255, 255, 0.2); filter: alpha(opacity=20); border: none;padding: 6px;}
-.gomb a {color:#FFD700; text-decoration: none}
+#kapcsolat .gomb {
+    background-color: rgb(255, 255, 255, 0.2);
+    filter: alpha(opacity=20);
+    border: none;
+    padding: 6px;
+}
+
+.gomb a {
+    color: #FFD700;
+    text-decoration: none
+}
 
 /*Media query*/
-@media (max-width: 800px){
-    section {width: 98%; overflow: hidden}
-    h2 {width: 100%; margin: 0 auto;}
-    form div {width: 70%; }
-    #videók {height: auto; width: 98%}
-    #carouselExampleSlidesOnly div div .slide {background-position: right}
-    #kapcsolat .szelesseg {width: 98%}
-    table.darkTable {margin: 0 auto; width: 80%}
-        }
 
-
-@media (max-width: 600px){
-    #carouselExampleSlidesOnly div div .slide2 {background-position: left}
-    form div {width: 80%; padding: 0}
-    table.darkTable {margin: 0; width: 100%}
-    #velemeny .container-fluid {width: 100%;}
-    .háttér {background-image: url(images/bg5.jpg);background-attachment: fixed; background-size: cover; background-position: center}
-    form div {background-color: transparent; width: 95%}
-    #munkak {min-height: auto}
-        }
-
-
-@media (max-width: 600px){
-    .háttér {background-image: url(images/bg5.jpg);background-attachment: fixed; background-size: cover; color:black}
-    .card-header, .card-body {background-color: rgb(255, 255, 255, 0.2); filter: alpha(opacity=20);}
-    #kapcsolat {background-image: linear-gradient(to bottom right, black, grey);}
+@media (max-width: 800px) {
+    section {
+        width: 98%;
+        overflow: hidden
+    }
+    h2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    form div {
+        width: 70%;
+    }
+    #videók {
+        height: auto;
+        width: 98%
+    }
+    #carouselExampleSlidesOnly div div .slide {
+        background-position: right
+    }
+    #kapcsolat .szelesseg {
+        width: 98%
+    }
+    table.darkTable {
+        margin: 0 auto;
+        width: 80%
+    }
 }
 
 
-
-
+@media (max-width: 600px) {
+    #carouselExampleSlidesOnly div div .slide2 {
+        background-position: left
+    }
+    form div {
+        width: 80%;
+        padding: 0
+    }
+    table.darkTable {
+        margin: 0;
+        width: 100%
+    }
+    #velemeny .container-fluid {
+        width: 100%;
+    }
+    .háttér {
+        background-image: url(images/bg5.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+         color: black
+    }
+    form div {
+        background-color: transparent;
+        width: 95%
+    }
+    #munkak {
+        min-height: auto;
+    }
+     #kapcsolat {
+        background-image: linear-gradient(to bottom right, black, grey);
+    }
+}
 
 
 
