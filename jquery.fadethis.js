@@ -14,7 +14,7 @@
     Plugin.prototype = {
         globals: {
             pluginName: "fadeThis",
-            bufferTime: 50,
+            bufferTime: 10,
         },
         defaults: {
             baseName:       "slide-",
