@@ -377,6 +377,7 @@ table.darkTable tfoot td {
     .háttér {
         background-image: url(images/bg5.jpg);
         background-attachment: fixed;
+        background-position: center;
         background-size: cover;
          color: black
     }
